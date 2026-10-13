@@ -1,10 +1,10 @@
 import { useState, useEffect, useMemo } from 'react';
 
 const roles = [
-  'Frontend Engineer',
-  'Backend Engineer',
+  'Software Engineer',
+  'Automation Engineer',
   'Full-Stack Developer',
-  'AI Explorer',
+  'AI Engineer',
 ];
 
 const TypingHero = () => {

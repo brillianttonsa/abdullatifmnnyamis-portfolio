@@ -15,11 +15,11 @@ const Hero = () => (
 
     <div className="relative z-10 space-y-6">
       <h2 className="text-[#fde047] text-xs md:text-sm font-black uppercase tracking-[0.5em]">
-        Frontend & Backend Engineer | Aspiring AI Engineer
+        Software & Automation Engineer | Aspiring AI Engineer
       </h2>
       <TypingHero />
       <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
-        Crafting <span className="text-white underline decoration-[#fde047] decoration-4 underline-offset-4">clean, maintainable code</span> and scalable web solutions with React, Node.js, and modern tooling.
+        Building <span className="text-white underline decoration-[#fde047] decoration-4 underline-offset-4">reliable software, automating business workflows, and exploring AI-powered solutions </span>with modern tooling.
       </p>
     </div>
 
