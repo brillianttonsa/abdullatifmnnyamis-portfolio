@@ -1,27 +1,21 @@
 const ProjectCard = ({ project, onClick }) => (
   <div
-    className="group cursor-pointer"
+    className="group flex h-full cursor-pointer flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#facc15] focus-visible:ring-offset-2 sm:p-6"
     onClick={() => onClick(project)}
     onKeyDown={(e) => e.key === 'Enter' && onClick(project)}
     role="button"
     tabIndex={0}
   >
-    <div className="overflow-hidden rounded-xl mb-6 shadow-sm border border-slate-100 bg-slate-100 relative">
+    <div className="relative mb-5 overflow-hidden rounded-xl border border-slate-100 bg-slate-100">
       <img
         src={project.image}
         alt={project.title}
-        className="w-full h-56 object-cover transform group-hover:scale-105 transition duration-700"
+        className="h-56 w-full object-cover transition duration-500 group-hover:scale-105"
       />
-      {project.status !== "Live" && (
-        <div className="absolute top-3 left-3 bg-slate-900/90 text-[#fde047] text-[8px] font-bold px-2 py-1 rounded flex items-center gap-1 backdrop-blur-sm">
-          <div className="w-1.5 h-1.5 rounded-full bg-[#fde047] animate-pulse" />
-          {project.status.toUpperCase()}
-        </div>
-      )}
     </div>
-    <span className="text-[#facc15] text-[10px] font-black uppercase tracking-widest">{project.category}</span>
-    <h3 className="font-black text-2xl text-slate-900 mt-1 mb-3 group-hover:text-[#facc15] transition-colors">{project.title}</h3>
-    <p className="text-slate-500 text-sm leading-relaxed line-clamp-3">{project.desc}</p>
+    <span className="text-[10px] font-black uppercase tracking-widest text-[#a16207]">{project.category}</span>
+    <h3 className="mb-3 mt-1 text-2xl font-black text-slate-900 transition-colors group-hover:text-[#a16207]">{project.title}</h3>
+    <p className="text-sm leading-relaxed text-slate-500 line-clamp-3">{project.desc}</p>
   </div>
 );
 

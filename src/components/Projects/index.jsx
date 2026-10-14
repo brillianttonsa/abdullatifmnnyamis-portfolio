@@ -27,7 +27,7 @@ const ProjectSection = () => {
           subtitle="A selection of systems I’m building across business management, productivity, payment reconciliation, and Wi-Fi subscription management."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 gap-y-16">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} onClick={setSelectedProject} />
           ))}
