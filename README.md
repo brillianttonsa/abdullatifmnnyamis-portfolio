@@ -17,7 +17,7 @@ A modern personal portfolio showcasing skills, resume, and project deployments. 
 - **About** — Bio and details grid
 - **Skills** — Service cards and skill categories
 - **Resume** — Education, experience, skill stack with Recharts, and PDF download
-- **Projects** — Project cards, modal details, and future vision section
+- **Projects** — Current project cards with descriptions, feature details, and technology stacks
 - **FAQ** — Expandable FAQ items
 - **Contact** — Form and contact info
 - **Responsive** — Mobile menu, backdrop blur header, polished layouts
