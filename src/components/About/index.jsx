@@ -5,8 +5,8 @@ import AboutDetailsGrid from './AboutDetailsGrid';
 const details = [
   { label: "Name:", value: "Abdullatif Mnyamisi" },
   { label: "Email:", value: "abdullatifmyamis@gmail.com", isLink: true },
-  { label: "Role:", value: "Frontend & Backend Engineer — Aspiring AI Engineer" },
-  { label: "Status:", value: "Finalist CS Student" },
+  { label: "Role:", value: "Software & Automation Engineer — Aspiring AI Engineer" },
+  { label: "Status:", value: "FreeLancer" },
 ];
 
 const About = () => (
