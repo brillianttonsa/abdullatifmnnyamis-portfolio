@@ -6,12 +6,12 @@ const services = [
   {
     title: "Frontend Engineering",
     icon: <Layout size={42} />,
-    desc: "Building dynamic, component-based applications with React and Next.js. Clean, reusable code with responsive UI design using Tailwind CSS."
+    desc: "Building dynamic, component-based applications with React. Clean, reusable code with responsive UI design using Tailwind CSS."
   },
   {
     title: "Backend Development",
     icon: <Database size={42} />,
-    desc: "Architecting scalable APIs with Node.js and Express. Database design, optimization, and secure server-side logic with PostgreSQL."
+    desc: "Architecting scalable APIs with Node.js-Express and NestJS. Database design, optimization, and secure server-side logic with PostgreSQL."
   },
   {
     title: "Clean Code & Testing",
