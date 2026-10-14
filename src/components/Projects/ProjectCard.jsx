@@ -21,7 +21,7 @@ const ProjectCard = ({ project, onClick }) => (
     </div>
     <span className="text-[#facc15] text-[10px] font-black uppercase tracking-widest">{project.category}</span>
     <h3 className="font-black text-2xl text-slate-900 mt-1 mb-3 group-hover:text-[#facc15] transition-colors">{project.title}</h3>
-    <p className="text-slate-500 text-sm line-clamp-2">Click to inspect technical details →</p>
+    <p className="text-slate-500 text-sm leading-relaxed line-clamp-3">{project.desc}</p>
   </div>
 );
 

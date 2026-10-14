@@ -18,7 +18,7 @@ const ProjectModal = ({ project, onClose }) => {
           <X size={20} className="text-slate-900" />
         </button>
         <div className="w-full md:w-1/2 h-80 md:h-auto overflow-none">
-          <img src={project.image} className="w-full h-full object-cover" alt="" />
+          <img src={project.image} className="w-full h-full object-cover" alt={project.title} />
         </div>
         <div className="w-full md:w-1/2 p-8 md:p-12 overflow-y-auto max-h-[90vh]">
           <span className="text-[#facc15] text-[10px] font-black uppercase tracking-widest">{project.category}</span>
@@ -53,18 +53,20 @@ const ProjectModal = ({ project, onClose }) => {
             </div>
           )}
           <div className="flex gap-4 pt-6 border-t border-slate-100">
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`flex-1 text-center py-4 rounded-xl font-black text-xs uppercase transition-all ${
-                project.status === "Live"
-                  ? "bg-[#fde047] text-slate-900 hover:bg-slate-900 hover:text-white"
-                  : "bg-slate-100 text-slate-400 cursor-not-allowed pointer-events-none"
-              }`}
-            >
-              {project.status === "Live" ? "View Project Live" : "System in Build"}
-            </a>
+            {project.link ? (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 text-center py-4 rounded-xl font-black text-xs uppercase transition-all bg-[#fde047] text-slate-900 hover:bg-slate-900 hover:text-white"
+              >
+                View Project
+              </a>
+            ) : (
+              <span className="flex-1 text-center py-4 rounded-xl font-black text-xs uppercase bg-slate-100 text-slate-400">
+                {project.status}
+              </span>
+            )}
           </div>
         </div>
       </div>
