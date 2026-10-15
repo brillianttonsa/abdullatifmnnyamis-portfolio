@@ -1,6 +1,6 @@
 import maizeImg from '../../assets/maize-inventory-ai.png';
 import lifeHubImg from '../../assets/task-manager.png';
-import paymentImg from '../../assets/fee-student-system.png';
+import taskManagerImg from '../../assets/task-manager.png';
 import wifiImg from '../../assets/smart-admin.png';
 
 export const projects = [
@@ -34,21 +34,17 @@ export const projects = [
     image: lifeHubImg,
     link: "#"
   },
-  {
-    title: 'Payment Reconciliation System',
-    category: 'Financial Operations',
-    status: 'In Development',
-    desc: 'A Python-based reconciliation solution that compares expected transactions with payment records, identifies discrepancies, and tracks unmatched payments to reduce manual reconciliation work.',
-    features: [
-      'Compare expected transactions with payment records',
-      'Identify discrepancies and unmatched payments',
-      'Structured transaction data and reconciliation workflows',
-      'Reconciliation reporting',
-    ],
-    tech: ['Python'],
-    image: paymentImg,
-    link: "#"
-  },
+   {
+    title: "Task Management Tool",
+    category: "Full-Stack Web",
+    status: "Live",
+    desc: "An enterprise-grade productivity suite focused on team collaboration and real-time state synchronization.",
+    features: ["Optimistic UI updates", "Drag-and-drop task kanban", "Multi-user real-time sync", "Advanced activity logging"],
+    tech: ["React", "Express", "PostgreSQL"],
+    image: taskManagerImg,
+    link: "https://task-manager-app-three-mauve.vercel.app/"
+    },,
+  
   {
     title: 'Wi-Fi Access & Subscription Management System',
     category: 'Network Management',
@@ -60,7 +56,7 @@ export const projects = [
       'Payment history',
       'Authentication and management dashboard',
     ],
-    tech: [],
+    tech: ['React', 'Express', "TypeScript", 'Drizzle ORM', 'PostgreSQL'],
     image: wifiImg,
     link: "#"
   },
